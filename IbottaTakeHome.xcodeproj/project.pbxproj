@@ -1,0 +1,712 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3078025D26CC660E00382ADA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3078025C26CC660E00382ADA /* AppDelegate.swift */; };
+		3078025F26CC660E00382ADA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3078025E26CC660E00382ADA /* SceneDelegate.swift */; };
+		3078026126CC660E00382ADA /* OffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3078026026CC660E00382ADA /* OffersViewController.swift */; };
+		3078026626CC661000382ADA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3078026526CC661000382ADA /* Assets.xcassets */; };
+		3078026926CC661000382ADA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3078026726CC661000382ADA /* LaunchScreen.storyboard */; };
+		3078027426CC661100382ADA /* IbottaTakeHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3078027326CC661100382ADA /* IbottaTakeHomeTests.swift */; };
+		3078027F26CC661100382ADA /* IbottaTakeHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3078027E26CC661100382ADA /* IbottaTakeHomeUITests.swift */; };
+		3078029126CC67D600382ADA /* OfferElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3078028F26CC67D600382ADA /* OfferElement.swift */; };
+		3078029226CC67D600382ADA /* JSONSchemaSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3078029026CC67D600382ADA /* JSONSchemaSupport.swift */; };
+		3078029526CC696F00382ADA /* OfferCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3078029426CC696F00382ADA /* OfferCollectionViewCell.swift */; };
+		3078029726CC71D300382ADA /* OffersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3078029626CC71D300382ADA /* OffersViewModel.swift */; };
+		3078029B26CC72A600382ADA /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3078029A26CC72A600382ADA /* JSONLoader.swift */; };
+		3078029D26CC77ED00382ADA /* Offers.json in Resources */ = {isa = PBXBuildFile; fileRef = 3078029C26CC77EC00382ADA /* Offers.json */; };
+		3078029F26CC799A00382ADA /* OfferDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3078029E26CC799A00382ADA /* OfferDetailViewController.swift */; };
+		307802A126CC79C900382ADA /* OfferDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307802A026CC79C900382ADA /* OfferDetailViewModel.swift */; };
+		307802A426CC7A6100382ADA /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307802A326CC7A6100382ADA /* Coordinate.swift */; };
+		307802A726CC7AE500382ADA /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307802A626CC7AE500382ADA /* App.swift */; };
+		307802A926CC7B1A00382ADA /* App.Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307802A826CC7B1A00382ADA /* App.Theme.swift */; };
+		307802AB26CC7B4400382ADA /* App.Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307802AA26CC7B4400382ADA /* App.Error.swift */; };
+		307802AD26CC7BAE00382ADA /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307802AC26CC7BAE00382ADA /* RootCoordinator.swift */; };
+		307802AF26CC7BDF00382ADA /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307802AE26CC7BDF00382ADA /* Application.swift */; };
+		307802B126CC7DCC00382ADA /* OffersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307802B026CC7DCC00382ADA /* OffersCoordinator.swift */; };
+		307802B326CC7DF000382ADA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307802B226CC7DF000382ADA /* ViewModel.swift */; };
+		307802B526CC7E1F00382ADA /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307802B426CC7E1F00382ADA /* View.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3078027026CC661100382ADA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3078025126CC660E00382ADA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3078025826CC660E00382ADA;
+			remoteInfo = IbottaTakeHome;
+		};
+		3078027B26CC661100382ADA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3078025126CC660E00382ADA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3078025826CC660E00382ADA;
+			remoteInfo = IbottaTakeHome;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3078025926CC660E00382ADA /* IbottaTakeHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IbottaTakeHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3078025C26CC660E00382ADA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3078025E26CC660E00382ADA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3078026026CC660E00382ADA /* OffersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersViewController.swift; sourceTree = "<group>"; };
+		3078026526CC661000382ADA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3078026826CC661000382ADA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3078026A26CC661000382ADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3078026F26CC661100382ADA /* IbottaTakeHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IbottaTakeHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3078027326CC661100382ADA /* IbottaTakeHomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IbottaTakeHomeTests.swift; sourceTree = "<group>"; };
+		3078027526CC661100382ADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3078027A26CC661100382ADA /* IbottaTakeHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IbottaTakeHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3078027E26CC661100382ADA /* IbottaTakeHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IbottaTakeHomeUITests.swift; sourceTree = "<group>"; };
+		3078028026CC661100382ADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3078028F26CC67D600382ADA /* OfferElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferElement.swift; sourceTree = "<group>"; };
+		3078029026CC67D600382ADA /* JSONSchemaSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONSchemaSupport.swift; sourceTree = "<group>"; };
+		3078029426CC696F00382ADA /* OfferCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferCollectionViewCell.swift; sourceTree = "<group>"; };
+		3078029626CC71D300382ADA /* OffersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersViewModel.swift; sourceTree = "<group>"; };
+		3078029A26CC72A600382ADA /* JSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
+		3078029C26CC77EC00382ADA /* Offers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Offers.json; sourceTree = "<group>"; };
+		3078029E26CC799A00382ADA /* OfferDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetailViewController.swift; sourceTree = "<group>"; };
+		307802A026CC79C900382ADA /* OfferDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetailViewModel.swift; sourceTree = "<group>"; };
+		307802A326CC7A6100382ADA /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		307802A626CC7AE500382ADA /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		307802A826CC7B1A00382ADA /* App.Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.Theme.swift; sourceTree = "<group>"; };
+		307802AA26CC7B4400382ADA /* App.Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.Error.swift; sourceTree = "<group>"; };
+		307802AC26CC7BAE00382ADA /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
+		307802AE26CC7BDF00382ADA /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		307802B026CC7DCC00382ADA /* OffersCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersCoordinator.swift; sourceTree = "<group>"; };
+		307802B226CC7DF000382ADA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		307802B426CC7E1F00382ADA /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3078025626CC660E00382ADA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3078026C26CC661100382ADA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3078027726CC661100382ADA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3078025026CC660E00382ADA = {
+			isa = PBXGroup;
+			children = (
+				3078025B26CC660E00382ADA /* IbottaTakeHome */,
+				3078027226CC661100382ADA /* IbottaTakeHomeTests */,
+				3078027D26CC661100382ADA /* IbottaTakeHomeUITests */,
+				3078025A26CC660E00382ADA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3078025A26CC660E00382ADA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3078025926CC660E00382ADA /* IbottaTakeHome.app */,
+				3078026F26CC661100382ADA /* IbottaTakeHomeTests.xctest */,
+				3078027A26CC661100382ADA /* IbottaTakeHomeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3078025B26CC660E00382ADA /* IbottaTakeHome */ = {
+			isa = PBXGroup;
+			children = (
+				307802A526CC7A9300382ADA /* App */,
+				307802A226CC7A5500382ADA /* Base */,
+				3078029926CC729A00382ADA /* Service */,
+				3078028E26CC675500382ADA /* Models */,
+				3078028D26CC674E00382ADA /* Extensions */,
+				3078028C26CC674800382ADA /* Modules */,
+				3078025C26CC660E00382ADA /* AppDelegate.swift */,
+				3078025E26CC660E00382ADA /* SceneDelegate.swift */,
+				3078026526CC661000382ADA /* Assets.xcassets */,
+				3078026726CC661000382ADA /* LaunchScreen.storyboard */,
+				3078026A26CC661000382ADA /* Info.plist */,
+				3078029C26CC77EC00382ADA /* Offers.json */,
+			);
+			path = IbottaTakeHome;
+			sourceTree = "<group>";
+		};
+		3078027226CC661100382ADA /* IbottaTakeHomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				3078027326CC661100382ADA /* IbottaTakeHomeTests.swift */,
+				3078027526CC661100382ADA /* Info.plist */,
+			);
+			path = IbottaTakeHomeTests;
+			sourceTree = "<group>";
+		};
+		3078027D26CC661100382ADA /* IbottaTakeHomeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3078027E26CC661100382ADA /* IbottaTakeHomeUITests.swift */,
+				3078028026CC661100382ADA /* Info.plist */,
+			);
+			path = IbottaTakeHomeUITests;
+			sourceTree = "<group>";
+		};
+		3078028C26CC674800382ADA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3078029826CC71D800382ADA /* OfferDetails */,
+				3078029326CC689000382ADA /* Offers */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		3078028D26CC674E00382ADA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3078029026CC67D600382ADA /* JSONSchemaSupport.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3078028E26CC675500382ADA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3078028F26CC67D600382ADA /* OfferElement.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3078029326CC689000382ADA /* Offers */ = {
+			isa = PBXGroup;
+			children = (
+				3078026026CC660E00382ADA /* OffersViewController.swift */,
+				3078029426CC696F00382ADA /* OfferCollectionViewCell.swift */,
+				3078029626CC71D300382ADA /* OffersViewModel.swift */,
+				307802B026CC7DCC00382ADA /* OffersCoordinator.swift */,
+			);
+			path = Offers;
+			sourceTree = "<group>";
+		};
+		3078029826CC71D800382ADA /* OfferDetails */ = {
+			isa = PBXGroup;
+			children = (
+				3078029E26CC799A00382ADA /* OfferDetailViewController.swift */,
+				307802A026CC79C900382ADA /* OfferDetailViewModel.swift */,
+			);
+			path = OfferDetails;
+			sourceTree = "<group>";
+		};
+		3078029926CC729A00382ADA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3078029A26CC72A600382ADA /* JSONLoader.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		307802A226CC7A5500382ADA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				307802A326CC7A6100382ADA /* Coordinate.swift */,
+				307802B226CC7DF000382ADA /* ViewModel.swift */,
+				307802B426CC7E1F00382ADA /* View.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		307802A526CC7A9300382ADA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				307802A626CC7AE500382ADA /* App.swift */,
+				307802A826CC7B1A00382ADA /* App.Theme.swift */,
+				307802AA26CC7B4400382ADA /* App.Error.swift */,
+				307802AC26CC7BAE00382ADA /* RootCoordinator.swift */,
+				307802AE26CC7BDF00382ADA /* Application.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3078025826CC660E00382ADA /* IbottaTakeHome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3078028326CC661100382ADA /* Build configuration list for PBXNativeTarget "IbottaTakeHome" */;
+			buildPhases = (
+				3078025526CC660E00382ADA /* Sources */,
+				3078025626CC660E00382ADA /* Frameworks */,
+				3078025726CC660E00382ADA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IbottaTakeHome;
+			productName = IbottaTakeHome;
+			productReference = 3078025926CC660E00382ADA /* IbottaTakeHome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3078026E26CC661100382ADA /* IbottaTakeHomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3078028626CC661100382ADA /* Build configuration list for PBXNativeTarget "IbottaTakeHomeTests" */;
+			buildPhases = (
+				3078026B26CC661100382ADA /* Sources */,
+				3078026C26CC661100382ADA /* Frameworks */,
+				3078026D26CC661100382ADA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3078027126CC661100382ADA /* PBXTargetDependency */,
+			);
+			name = IbottaTakeHomeTests;
+			productName = IbottaTakeHomeTests;
+			productReference = 3078026F26CC661100382ADA /* IbottaTakeHomeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3078027926CC661100382ADA /* IbottaTakeHomeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3078028926CC661100382ADA /* Build configuration list for PBXNativeTarget "IbottaTakeHomeUITests" */;
+			buildPhases = (
+				3078027626CC661100382ADA /* Sources */,
+				3078027726CC661100382ADA /* Frameworks */,
+				3078027826CC661100382ADA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3078027C26CC661100382ADA /* PBXTargetDependency */,
+			);
+			name = IbottaTakeHomeUITests;
+			productName = IbottaTakeHomeUITests;
+			productReference = 3078027A26CC661100382ADA /* IbottaTakeHomeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3078025126CC660E00382ADA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					3078025826CC660E00382ADA = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					3078026E26CC661100382ADA = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 3078025826CC660E00382ADA;
+					};
+					3078027926CC661100382ADA = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 3078025826CC660E00382ADA;
+					};
+				};
+			};
+			buildConfigurationList = 3078025426CC660E00382ADA /* Build configuration list for PBXProject "IbottaTakeHome" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3078025026CC660E00382ADA;
+			productRefGroup = 3078025A26CC660E00382ADA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3078025826CC660E00382ADA /* IbottaTakeHome */,
+				3078026E26CC661100382ADA /* IbottaTakeHomeTests */,
+				3078027926CC661100382ADA /* IbottaTakeHomeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3078025726CC660E00382ADA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3078029D26CC77ED00382ADA /* Offers.json in Resources */,
+				3078026926CC661000382ADA /* LaunchScreen.storyboard in Resources */,
+				3078026626CC661000382ADA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3078026D26CC661100382ADA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3078027826CC661100382ADA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3078025526CC660E00382ADA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				307802AF26CC7BDF00382ADA /* Application.swift in Sources */,
+				3078029226CC67D600382ADA /* JSONSchemaSupport.swift in Sources */,
+				3078029526CC696F00382ADA /* OfferCollectionViewCell.swift in Sources */,
+				3078026126CC660E00382ADA /* OffersViewController.swift in Sources */,
+				307802AB26CC7B4400382ADA /* App.Error.swift in Sources */,
+				3078029726CC71D300382ADA /* OffersViewModel.swift in Sources */,
+				307802B526CC7E1F00382ADA /* View.swift in Sources */,
+				307802A126CC79C900382ADA /* OfferDetailViewModel.swift in Sources */,
+				307802A426CC7A6100382ADA /* Coordinate.swift in Sources */,
+				307802AD26CC7BAE00382ADA /* RootCoordinator.swift in Sources */,
+				307802B126CC7DCC00382ADA /* OffersCoordinator.swift in Sources */,
+				307802B326CC7DF000382ADA /* ViewModel.swift in Sources */,
+				3078029B26CC72A600382ADA /* JSONLoader.swift in Sources */,
+				3078029126CC67D600382ADA /* OfferElement.swift in Sources */,
+				3078029F26CC799A00382ADA /* OfferDetailViewController.swift in Sources */,
+				307802A726CC7AE500382ADA /* App.swift in Sources */,
+				307802A926CC7B1A00382ADA /* App.Theme.swift in Sources */,
+				3078025D26CC660E00382ADA /* AppDelegate.swift in Sources */,
+				3078025F26CC660E00382ADA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3078026B26CC661100382ADA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3078027426CC661100382ADA /* IbottaTakeHomeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3078027626CC661100382ADA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3078027F26CC661100382ADA /* IbottaTakeHomeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3078027126CC661100382ADA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3078025826CC660E00382ADA /* IbottaTakeHome */;
+			targetProxy = 3078027026CC661100382ADA /* PBXContainerItemProxy */;
+		};
+		3078027C26CC661100382ADA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3078025826CC660E00382ADA /* IbottaTakeHome */;
+			targetProxy = 3078027B26CC661100382ADA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3078026726CC661000382ADA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3078026826CC661000382ADA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3078028126CC661100382ADA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3078028226CC661100382ADA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3078028426CC661100382ADA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IbottaTakeHome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Danny.IbottaTakeHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3078028526CC661100382ADA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IbottaTakeHome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Danny.IbottaTakeHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3078028726CC661100382ADA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IbottaTakeHomeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Danny.IbottaTakeHomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IbottaTakeHome.app/IbottaTakeHome";
+			};
+			name = Debug;
+		};
+		3078028826CC661100382ADA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IbottaTakeHomeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Danny.IbottaTakeHomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IbottaTakeHome.app/IbottaTakeHome";
+			};
+			name = Release;
+		};
+		3078028A26CC661100382ADA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IbottaTakeHomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Danny.IbottaTakeHomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IbottaTakeHome;
+			};
+			name = Debug;
+		};
+		3078028B26CC661100382ADA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IbottaTakeHomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Danny.IbottaTakeHomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IbottaTakeHome;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3078025426CC660E00382ADA /* Build configuration list for PBXProject "IbottaTakeHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3078028126CC661100382ADA /* Debug */,
+				3078028226CC661100382ADA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3078028326CC661100382ADA /* Build configuration list for PBXNativeTarget "IbottaTakeHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3078028426CC661100382ADA /* Debug */,
+				3078028526CC661100382ADA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3078028626CC661100382ADA /* Build configuration list for PBXNativeTarget "IbottaTakeHomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3078028726CC661100382ADA /* Debug */,
+				3078028826CC661100382ADA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3078028926CC661100382ADA /* Build configuration list for PBXNativeTarget "IbottaTakeHomeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3078028A26CC661100382ADA /* Debug */,
+				3078028B26CC661100382ADA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3078025126CC660E00382ADA /* Project object */;
+}
