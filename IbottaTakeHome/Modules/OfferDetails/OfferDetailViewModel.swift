@@ -8,15 +8,11 @@
 import Foundation
 
 final class OfferDetailViewModel: ViewModel {
+    private let offer: OfferElement
     var coordinator: OfferDetailCoordinator?
     
-    func showScreen(_ screen: RootCoordinator.Screen) {
-        switch screen {
-        case .offerList:
-            // Using Navigation's pop instead
-            break
-        default:
-            break
-        }
+    init(withOffer offer: OfferElement, coordinator: OfferDetailCoordinator) {
+        self.offer = offer
+        self.coordinator = coordinator
     }
 }

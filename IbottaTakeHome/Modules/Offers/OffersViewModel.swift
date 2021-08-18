@@ -11,7 +11,13 @@ final class OffersViewModel: ViewModel {
     var coordinator: OffersCoordinator?
     private let jsonLoader = JSONLoader()
     
+    var offers: Offers?
+    
     // MARK: - Computed
+    
+    var numOfItems: Int {
+        return offers?.count ?? 0
+    }
     
     // MARK: - Public
     
@@ -22,6 +28,7 @@ final class OffersViewModel: ViewModel {
         }
         do {
             let offers = try Offers.init(data: data)
+            self.offers = offers
             completion(.success(offers))
         }
         catch let error {

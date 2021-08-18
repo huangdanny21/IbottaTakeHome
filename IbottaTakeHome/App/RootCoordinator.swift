@@ -8,7 +8,6 @@
 import UIKit
 
 final class RootCoordinator: Coordinate {
-
     private lazy var offersViewController: UIViewController = {
         let coordinator = OffersCoordinator()
         let offersVC = OffersViewController()
@@ -41,6 +40,6 @@ final class RootCoordinator: Coordinate {
 extension RootCoordinator {
     enum Screen {
         case offerList
-        case offerDetail
+        case offerDetail(OfferElement)
     }
 }
