@@ -6,7 +6,7 @@
 import Foundation
 
 // MARK: - OfferElement
-struct OfferElement: Codable, Model {
+struct OfferElement: Codable {
     let id: String?
     let url: String?
     let name, offerDescription, terms, currentValue: String?

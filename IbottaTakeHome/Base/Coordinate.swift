@@ -7,10 +7,6 @@
 
 import UIKit
 
-protocol Model {
-    
-}
-
 protocol Coordinate {
     associatedtype Screen
     associatedtype View: UIViewController
