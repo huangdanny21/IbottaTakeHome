@@ -10,6 +10,10 @@ import UIKit
 final class OfferDetailViewController: UIViewController, View {
     var viewModel: OfferDetailViewModel!
     
+    private lazy var favoriteBarButton: UIBarButtonItem = {
+        return UIBarButtonItem(image: UIImage(named: "star"), style: .plain, target: self, action: #selector(saveActionTapped))
+    }()
+    
     // MARK: - Life Cycle
     
     override func loadView() {
@@ -40,11 +44,21 @@ final class OfferDetailViewController: UIViewController, View {
     // MARK: - UI
     
     private func addFavoriteButton() {
-        let button = UIBarButtonItem(barButtonSystemItem: .bookmarks, target: self, action: #selector(saveActionTapped))
-        navigationItem.rightBarButtonItem = button
+        if viewModel.isFavorited {
+            favoriteBarButton.image = UIImage(named: "checkmark")
+        } else {
+            favoriteBarButton.image = UIImage(named: "star")
+        }
+        navigationItem.rightBarButtonItem = favoriteBarButton
     }
     
     @objc private func saveActionTapped() {
-        viewModel.bookmarkTapped()
+        viewModel.bookmarkTapped { isSaved in
+            if isSaved {
+                favoriteBarButton.image = UIImage(named: "checkmark")
+            } else {
+                favoriteBarButton.image = UIImage(named: "star")
+            }
+        }
     }
 }

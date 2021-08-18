@@ -43,8 +43,16 @@ final class OfferCollectionViewCell: UICollectionViewCell {
         label.numberOfLines = 1
         return label
     }()
-
     
+    private var favoritedButton: UIButton = {
+        let button = UIButton()
+        button.isHidden = true
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setImage(UIImage(named: "checkmark"), for: .normal)
+        button.backgroundColor = .white
+        return button
+    }()
+
     // MARK: Constructor
     
     override init(frame: CGRect) {
@@ -53,6 +61,7 @@ final class OfferCollectionViewCell: UICollectionViewCell {
         grayContainerView.addSubview(offerImageView)
         contentView.addSubview(amountLabel)
         contentView.addSubview(nameLabel)
+        contentView.addSubview(favoritedButton)
         let constraints = [grayContainerView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
                            grayContainerView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
                            grayContainerView.topAnchor.constraint(equalTo: contentView.topAnchor),
@@ -68,7 +77,11 @@ final class OfferCollectionViewCell: UICollectionViewCell {
                            nameLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
                            nameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
                            nameLabel.topAnchor.constraint(equalTo: amountLabel.bottomAnchor, constant: 3),
-                           nameLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
+                           nameLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+                           favoritedButton.widthAnchor.constraint(equalToConstant: 25.0),
+                           favoritedButton.heightAnchor.constraint(equalToConstant: 25.0),
+                           favoritedButton.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 12),
+                           favoritedButton.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 12)
         ]
         NSLayoutConstraint.activate(constraints)
         contentView.layoutIfNeeded()
@@ -95,5 +108,8 @@ extension OfferCollectionViewCell {
         }
         amountLabel.text = offer.currentValue
         nameLabel.text = offer.name
+        if let id = offer.id {
+            favoritedButton.isHidden = !UserDefaults.standard.bool(forKey: id)
+        }
     }
 }
