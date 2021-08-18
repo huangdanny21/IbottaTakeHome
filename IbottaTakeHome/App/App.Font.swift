@@ -9,7 +9,28 @@ import UIKit
 
 extension App {
     struct Font {
-        static let demiBoldlFont = UIFont(name: "AvenirNext-DemiBold", size: 12)
-        static let regularFont = UIFont(name: "AvenirNext-Regular", size: 11)
+        enum FontType {
+            case demiBold(Double)
+            case regular(Double)
+        }
+        
+        enum FontName: String {
+            case demiBold = "AvenirNext-DemiBold"
+            case regular = "AvenirNext-Regular"
+        }
+        
+        let type: FontType
+    }
+}
+
+extension App.Font {
+    var instance: UIFont {
+        let defaultFont = UIFont.systemFont(ofSize: CGFloat(12.0))
+        switch type {
+        case .demiBold(let size):
+            return UIFont(name: App.Font.FontName.demiBold.rawValue, size: CGFloat(size)) ?? defaultFont
+        case .regular(let size):
+            return UIFont(name: App.Font.FontName.regular.rawValue, size: CGFloat(size)) ?? defaultFont
+        }
     }
 }

@@ -28,7 +28,7 @@ final class OfferCollectionViewCell: UICollectionViewCell {
     
     private var amountLabel: UILabel = {
         let label = UILabel()
-        label.font = App.Font.demiBoldlFont
+        label.font = App.Font(type: .demiBold(12.0)).instance
         label.textColor = UIColor.general
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 1
@@ -37,13 +37,13 @@ final class OfferCollectionViewCell: UICollectionViewCell {
     
     private var nameLabel: UILabel = {
         let label = UILabel()
-        label.font = App.Font.regularFont
+        label.font = App.Font(type: .regular(11.0)).instance
         label.textColor = UIColor.general
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 1
         return label
     }()
-        
+
     
     // MARK: Constructor
     
@@ -93,7 +93,7 @@ extension OfferCollectionViewCell {
             offerImageView.downloaded(from: imageUrl)
             contentView.layoutIfNeeded()
         }
-        amountLabel.text = offer.offerDescription
+        amountLabel.text = offer.currentValue
         nameLabel.text = offer.name
     }
 }

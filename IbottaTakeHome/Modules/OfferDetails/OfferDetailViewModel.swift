@@ -8,7 +8,7 @@
 import Foundation
 
 final class OfferDetailViewModel: ViewModel {
-    private let offer: OfferElement
+    let offer: OfferElement
     var coordinator: OfferDetailCoordinator?
     
     // MARK: - Computed
@@ -22,5 +22,9 @@ final class OfferDetailViewModel: ViewModel {
     init(withOffer offer: OfferElement, coordinator: OfferDetailCoordinator) {
         self.offer = offer
         self.coordinator = coordinator
+    }
+    
+    func bookmarkTapped() {
+        
     }
 }

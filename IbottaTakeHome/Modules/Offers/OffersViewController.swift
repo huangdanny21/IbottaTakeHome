@@ -8,9 +8,14 @@
 import UIKit
 
 final class OffersViewController: UIViewController, View {
+    
+    private let estimatedCellHeight: CGFloat = 150.0
+    private let horizontalPadding: CGFloat = 8.0
+    private let verticalPadding: CGFloat = 24.0
+    
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewLayout()
-        let collection = UICollectionView(frame: CGRect(x: 0, y: 0, width: 0, height: 0), collectionViewLayout: layout)
+        let collection = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collection.translatesAutoresizingMaskIntoConstraints = false
         collection.register(OfferCollectionViewCell.self, forCellWithReuseIdentifier: OfferCollectionViewCell.reuseIdentifier)
         collection.backgroundColor = .clear
@@ -73,11 +78,11 @@ final class OffersViewController: UIViewController, View {
                                              heightDimension: .fractionalHeight(1.0))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                               heightDimension: .estimated(150.0))
+                                               heightDimension: .estimated(estimatedCellHeight))
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: item, count: 2)
-        group.interItemSpacing = .fixed(8)
+        group.interItemSpacing = .fixed(horizontalPadding)
         let section = NSCollectionLayoutSection(group: group)
-        section.interGroupSpacing = 24
+        section.interGroupSpacing = verticalPadding
         let layout = UICollectionViewCompositionalLayout(section: section)
         return layout
     }

@@ -35,6 +35,7 @@
 		307802BA26CC87F000382ADA /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307802B926CC87F000382ADA /* UIImageView+Extension.swift */; };
 		307802BC26CC8AD400382ADA /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307802BB26CC8AD400382ADA /* UIColor+Extensions.swift */; };
 		307802BE26CCB6B500382ADA /* UIDevice+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307802BD26CCB6B400382ADA /* UIDevice+Extensions.swift */; };
+		307802C026CCB9DB00382ADA /* OfferDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307802BF26CCB9DB00382ADA /* OfferDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		307802B926CC87F000382ADA /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		307802BB26CC8AD400382ADA /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		307802BD26CCB6B400382ADA /* UIDevice+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extensions.swift"; sourceTree = "<group>"; };
+		307802BF26CCB9DB00382ADA /* OfferDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +141,6 @@
 		3078025B26CC660E00382ADA /* IbottaTakeHome */ = {
 			isa = PBXGroup;
 			children = (
-				307802B826CC835100382ADA /* Views */,
 				307802A526CC7A9300382ADA /* App */,
 				307802A226CC7A5500382ADA /* Base */,
 				3078029926CC729A00382ADA /* Service */,
@@ -219,6 +220,7 @@
 				3078029E26CC799A00382ADA /* OfferDetailViewController.swift */,
 				307802A026CC79C900382ADA /* OfferDetailViewModel.swift */,
 				307802B626CC833E00382ADA /* OfferDetailCoordinator.swift */,
+				307802BF26CCB9DB00382ADA /* OfferDetailView.swift */,
 			);
 			path = OfferDetails;
 			sourceTree = "<group>";
@@ -251,13 +253,6 @@
 				307802AE26CC7BDF00382ADA /* Application.swift */,
 			);
 			path = App;
-			sourceTree = "<group>";
-		};
-		307802B826CC835100382ADA /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,6 +405,7 @@
 				307802A726CC7AE500382ADA /* App.swift in Sources */,
 				307802B726CC833E00382ADA /* OfferDetailCoordinator.swift in Sources */,
 				307802A926CC7B1A00382ADA /* App.Font.swift in Sources */,
+				307802C026CCB9DB00382ADA /* OfferDetailView.swift in Sources */,
 				307802BC26CC8AD400382ADA /* UIColor+Extensions.swift in Sources */,
 				3078025D26CC660E00382ADA /* AppDelegate.swift in Sources */,
 				3078025F26CC660E00382ADA /* SceneDelegate.swift in Sources */,

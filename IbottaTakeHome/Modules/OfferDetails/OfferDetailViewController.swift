@@ -12,10 +12,15 @@ final class OfferDetailViewController: UIViewController, View {
     
     // MARK: - Life Cycle
     
+    override func loadView() {
+        view = OfferDetailView.makeOfferDetailView(withOffer: viewModel.offer)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = viewModel.title
         view.backgroundColor = .white
+        addFavoriteButton()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -30,5 +35,16 @@ final class OfferDetailViewController: UIViewController, View {
     
     override var prefersStatusBarHidden: Bool {
         return UIDevice.current.hasNotch
+    }
+    
+    // MARK: - UI
+    
+    private func addFavoriteButton() {
+        let button = UIBarButtonItem(barButtonSystemItem: .bookmarks, target: self, action: #selector(saveActionTapped))
+        navigationItem.rightBarButtonItem = button
+    }
+    
+    @objc private func saveActionTapped() {
+        viewModel.bookmarkTapped()
     }
 }
