@@ -8,7 +8,7 @@
 import UIKit
 
 final class OfferDetailViewController: UIViewController, View {
-    var viewModel: OffersViewModel!
+    var viewModel: OfferDetailViewModel!
     // MARK: - Life Cycle
     
     override func viewDidLoad() {

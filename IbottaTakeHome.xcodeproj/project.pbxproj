@@ -24,7 +24,7 @@
 		307802A126CC79C900382ADA /* OfferDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307802A026CC79C900382ADA /* OfferDetailViewModel.swift */; };
 		307802A426CC7A6100382ADA /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307802A326CC7A6100382ADA /* Coordinate.swift */; };
 		307802A726CC7AE500382ADA /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307802A626CC7AE500382ADA /* App.swift */; };
-		307802A926CC7B1A00382ADA /* App.Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307802A826CC7B1A00382ADA /* App.Theme.swift */; };
+		307802A926CC7B1A00382ADA /* App.Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307802A826CC7B1A00382ADA /* App.Font.swift */; };
 		307802AB26CC7B4400382ADA /* App.Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307802AA26CC7B4400382ADA /* App.Error.swift */; };
 		307802AD26CC7BAE00382ADA /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307802AC26CC7BAE00382ADA /* RootCoordinator.swift */; };
 		307802AF26CC7BDF00382ADA /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307802AE26CC7BDF00382ADA /* Application.swift */; };
@@ -33,6 +33,7 @@
 		307802B526CC7E1F00382ADA /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307802B426CC7E1F00382ADA /* View.swift */; };
 		307802B726CC833E00382ADA /* OfferDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307802B626CC833E00382ADA /* OfferDetailCoordinator.swift */; };
 		307802BA26CC87F000382ADA /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307802B926CC87F000382ADA /* UIImageView+Extension.swift */; };
+		307802BC26CC8AD400382ADA /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307802BB26CC8AD400382ADA /* UIColor+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +77,7 @@
 		307802A026CC79C900382ADA /* OfferDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetailViewModel.swift; sourceTree = "<group>"; };
 		307802A326CC7A6100382ADA /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
 		307802A626CC7AE500382ADA /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
-		307802A826CC7B1A00382ADA /* App.Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.Theme.swift; sourceTree = "<group>"; };
+		307802A826CC7B1A00382ADA /* App.Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.Font.swift; sourceTree = "<group>"; };
 		307802AA26CC7B4400382ADA /* App.Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.Error.swift; sourceTree = "<group>"; };
 		307802AC26CC7BAE00382ADA /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
 		307802AE26CC7BDF00382ADA /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
@@ -85,6 +86,7 @@
 		307802B426CC7E1F00382ADA /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		307802B626CC833E00382ADA /* OfferDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetailCoordinator.swift; sourceTree = "<group>"; };
 		307802B926CC87F000382ADA /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		307802BB26CC8AD400382ADA /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				3078029026CC67D600382ADA /* JSONSchemaSupport.swift */,
+				307802BB26CC8AD400382ADA /* UIColor+Extensions.swift */,
 				307802B926CC87F000382ADA /* UIImageView+Extension.swift */,
 			);
 			path = Extensions;
@@ -239,7 +242,7 @@
 		307802A526CC7A9300382ADA /* App */ = {
 			isa = PBXGroup;
 			children = (
-				307802A826CC7B1A00382ADA /* App.Theme.swift */,
+				307802A826CC7B1A00382ADA /* App.Font.swift */,
 				307802AA26CC7B4400382ADA /* App.Error.swift */,
 				307802AC26CC7BAE00382ADA /* RootCoordinator.swift */,
 				307802AE26CC7BDF00382ADA /* Application.swift */,
@@ -402,7 +405,8 @@
 				3078029F26CC799A00382ADA /* OfferDetailViewController.swift in Sources */,
 				307802A726CC7AE500382ADA /* App.swift in Sources */,
 				307802B726CC833E00382ADA /* OfferDetailCoordinator.swift in Sources */,
-				307802A926CC7B1A00382ADA /* App.Theme.swift in Sources */,
+				307802A926CC7B1A00382ADA /* App.Font.swift in Sources */,
+				307802BC26CC8AD400382ADA /* UIColor+Extensions.swift in Sources */,
 				3078025D26CC660E00382ADA /* AppDelegate.swift in Sources */,
 				3078025F26CC660E00382ADA /* SceneDelegate.swift in Sources */,
 			);
