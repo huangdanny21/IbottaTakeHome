@@ -8,7 +8,6 @@
 import UIKit
 
 final class OffersViewController: UIViewController, View {
-    
     private let estimatedCellHeight: CGFloat = 150.0
     private let horizontalPadding: CGFloat = 8.0
     private let verticalPadding: CGFloat = 24.0
@@ -78,8 +77,12 @@ final class OffersViewController: UIViewController, View {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.5),
                                              heightDimension: .fractionalHeight(1.0))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        var height = estimatedCellHeight
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            height = estimatedCellHeight * 2 // jut for scaling
+        }
         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                               heightDimension: .estimated(estimatedCellHeight))
+                                               heightDimension: .estimated(height))
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: item, count: 2)
         group.interItemSpacing = .fixed(horizontalPadding)
         let section = NSCollectionLayoutSection(group: group)
