@@ -23,7 +23,6 @@ final class OffersViewController: UIViewController, View {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Offers"
         view.backgroundColor = .white
         setUpCollectionView()
         viewModel.fetchOffers { result in
@@ -34,7 +33,9 @@ final class OffersViewController: UIViewController, View {
                     self?.collectionView.reloadData()
                 }
             case .failure(let error):
-                print("Error: \(error.localizedDescription)")
+                DispatchQueue.main.async { [weak self] in
+                    self?.viewModel.coordinator?.showError(error)
+                }
             }
         }
     }
@@ -48,6 +49,11 @@ final class OffersViewController: UIViewController, View {
         super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(false, animated: animated)
     }
+    
+    override var prefersStatusBarHidden: Bool {
+        return UIDevice.current.hasNotch
+    }
+    
     // MARK: - UI
     
     private func setUpCollectionView() {
@@ -59,6 +65,7 @@ final class OffersViewController: UIViewController, View {
         NSLayoutConstraint.activate(collectionViewConstraints)
         collectionView.collectionViewLayout = createOfferLayout()
         collectionView.dataSource = self
+        collectionView.delegate = self
     }
     
     private func createOfferLayout() -> UICollectionViewCompositionalLayout {
@@ -66,7 +73,7 @@ final class OffersViewController: UIViewController, View {
                                              heightDimension: .fractionalHeight(1.0))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                               heightDimension: .estimated(144.0))
+                                               heightDimension: .estimated(150.0))
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: item, count: 2)
         group.interItemSpacing = .fixed(8)
         let section = NSCollectionLayoutSection(group: group)
@@ -76,7 +83,7 @@ final class OffersViewController: UIViewController, View {
     }
 }
 
-extension OffersViewController: UICollectionViewDataSource {
+extension OffersViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel.numOfItems
     }

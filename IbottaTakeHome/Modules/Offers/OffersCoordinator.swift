@@ -23,7 +23,6 @@ final class OffersCoordinator: Coordinate {
         switch screen {
         case .offerDetail(let element):
             viewController?.navigationController?.pushViewController(offerDetailViewController(withOffer: element), animated: true)
-
         default:
             break
         }

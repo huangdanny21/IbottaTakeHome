@@ -34,6 +34,7 @@
 		307802B726CC833E00382ADA /* OfferDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307802B626CC833E00382ADA /* OfferDetailCoordinator.swift */; };
 		307802BA26CC87F000382ADA /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307802B926CC87F000382ADA /* UIImageView+Extension.swift */; };
 		307802BC26CC8AD400382ADA /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307802BB26CC8AD400382ADA /* UIColor+Extensions.swift */; };
+		307802BE26CCB6B500382ADA /* UIDevice+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307802BD26CCB6B400382ADA /* UIDevice+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		307802B626CC833E00382ADA /* OfferDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetailCoordinator.swift; sourceTree = "<group>"; };
 		307802B926CC87F000382ADA /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		307802BB26CC8AD400382ADA /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		307802BD26CCB6B400382ADA /* UIDevice+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 				3078029026CC67D600382ADA /* JSONSchemaSupport.swift */,
 				307802BB26CC8AD400382ADA /* UIColor+Extensions.swift */,
 				307802B926CC87F000382ADA /* UIImageView+Extension.swift */,
+				307802BD26CCB6B400382ADA /* UIDevice+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				3078029726CC71D300382ADA /* OffersViewModel.swift in Sources */,
 				307802B526CC7E1F00382ADA /* View.swift in Sources */,
 				307802A126CC79C900382ADA /* OfferDetailViewModel.swift in Sources */,
+				307802BE26CCB6B500382ADA /* UIDevice+Extensions.swift in Sources */,
 				307802A426CC7A6100382ADA /* Coordinate.swift in Sources */,
 				307802BA26CC87F000382ADA /* UIImageView+Extension.swift in Sources */,
 				307802AD26CC7BAE00382ADA /* RootCoordinator.swift in Sources */,

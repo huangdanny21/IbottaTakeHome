@@ -43,6 +43,7 @@ final class OfferCollectionViewCell: UICollectionViewCell {
         label.numberOfLines = 1
         return label
     }()
+        
     
     // MARK: Constructor
     
@@ -90,6 +91,7 @@ extension OfferCollectionViewCell {
     func populate(withOffer offer: OfferElement) {
         if let imageUrl = offer.url {
             offerImageView.downloaded(from: imageUrl)
+            contentView.layoutIfNeeded()
         }
         amountLabel.text = offer.offerDescription
         nameLabel.text = offer.name
