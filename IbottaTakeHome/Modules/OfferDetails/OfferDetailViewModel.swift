@@ -31,7 +31,7 @@ final class OfferDetailViewModel: ViewModel {
         self.coordinator = coordinator
     }
     
-    func bookmarkTapped(withCommpletion completion: ((Bool) -> Void)) {
+    func bookmarkTapped(withCompletion completion: ((Bool) -> Void)) {
         guard let id = offer.id else {
             completion(false)
             return

@@ -8,7 +8,6 @@
 import UIKit
 
 final class OfferDetailView: UIView {
-    
     static func makeOfferDetailView(withOffer offer: OfferElement) -> OfferDetailView {
         let view = OfferDetailView()
         if let url = offer.url {
@@ -38,7 +37,7 @@ final class OfferDetailView: UIView {
     private lazy var amountLabel: UILabel = {
         let label = UILabel()
         label.font = App.Font(type: .demiBold(24.0)).instance
-        label.textColor = UIColor.general
+        label.textColor = .general
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0
         return label
@@ -47,7 +46,7 @@ final class OfferDetailView: UIView {
     private lazy var desciptionLabel: UILabel = {
         let label = UILabel()
         label.font = App.Font(type: .regular(22.0)).instance
-        label.textColor = UIColor.general
+        label.textColor = .general
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0
         return label
