@@ -31,6 +31,7 @@
 		307802B126CC7DCC00382ADA /* OffersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307802B026CC7DCC00382ADA /* OffersCoordinator.swift */; };
 		307802B326CC7DF000382ADA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307802B226CC7DF000382ADA /* ViewModel.swift */; };
 		307802B526CC7E1F00382ADA /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307802B426CC7E1F00382ADA /* View.swift */; };
+		307802B726CC833E00382ADA /* OfferDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307802B626CC833E00382ADA /* OfferDetailCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		307802B026CC7DCC00382ADA /* OffersCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersCoordinator.swift; sourceTree = "<group>"; };
 		307802B226CC7DF000382ADA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		307802B426CC7E1F00382ADA /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		307802B626CC833E00382ADA /* OfferDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetailCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 		3078025B26CC660E00382ADA /* IbottaTakeHome */ = {
 			isa = PBXGroup;
 			children = (
+				307802B826CC835100382ADA /* Views */,
 				307802A526CC7A9300382ADA /* App */,
 				307802A226CC7A5500382ADA /* Base */,
 				3078029926CC729A00382ADA /* Service */,
@@ -206,6 +209,7 @@
 			children = (
 				3078029E26CC799A00382ADA /* OfferDetailViewController.swift */,
 				307802A026CC79C900382ADA /* OfferDetailViewModel.swift */,
+				307802B626CC833E00382ADA /* OfferDetailCoordinator.swift */,
 			);
 			path = OfferDetails;
 			sourceTree = "<group>";
@@ -221,6 +225,7 @@
 		307802A226CC7A5500382ADA /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				307802A626CC7AE500382ADA /* App.swift */,
 				307802A326CC7A6100382ADA /* Coordinate.swift */,
 				307802B226CC7DF000382ADA /* ViewModel.swift */,
 				307802B426CC7E1F00382ADA /* View.swift */,
@@ -231,13 +236,19 @@
 		307802A526CC7A9300382ADA /* App */ = {
 			isa = PBXGroup;
 			children = (
-				307802A626CC7AE500382ADA /* App.swift */,
 				307802A826CC7B1A00382ADA /* App.Theme.swift */,
 				307802AA26CC7B4400382ADA /* App.Error.swift */,
 				307802AC26CC7BAE00382ADA /* RootCoordinator.swift */,
 				307802AE26CC7BDF00382ADA /* Application.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		307802B826CC835100382ADA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -386,6 +397,7 @@
 				3078029126CC67D600382ADA /* OfferElement.swift in Sources */,
 				3078029F26CC799A00382ADA /* OfferDetailViewController.swift in Sources */,
 				307802A726CC7AE500382ADA /* App.swift in Sources */,
+				307802B726CC833E00382ADA /* OfferDetailCoordinator.swift in Sources */,
 				307802A926CC7B1A00382ADA /* App.Theme.swift in Sources */,
 				3078025D26CC660E00382ADA /* AppDelegate.swift in Sources */,
 				3078025F26CC660E00382ADA /* SceneDelegate.swift in Sources */,

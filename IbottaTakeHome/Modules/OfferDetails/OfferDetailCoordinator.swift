@@ -1,5 +1,5 @@
 //
-//  OfferDetailViewModel.swift
+//  OfferDetailCoordinator.swift
 //  IbottaTakeHome
 //
 //  Created by Danny Huang on 8/17/21.
@@ -7,8 +7,8 @@
 
 import Foundation
 
-final class OfferDetailViewModel: ViewModel {
-    var coordinator: OfferDetailCoordinator?
+final class OfferDetailCoordinator: Coordinate {
+    var viewController: OfferDetailViewController?
     
     func showScreen(_ screen: RootCoordinator.Screen) {
         switch screen {

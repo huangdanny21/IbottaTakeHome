@@ -5,4 +5,15 @@
 //  Created by Danny Huang on 8/17/21.
 //
 
-import Foundation
+import UIKit
+
+final class OfferDetailViewController: UIViewController, View {
+    var viewModel: OffersViewModel!
+    // MARK: - Life Cycle
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = "Offers"
+        view.backgroundColor = .white
+    }
+}

@@ -31,20 +31,6 @@ final class RootCoordinator: Coordinate {
         switch screen {
         case .offerList:
             window?.rootViewController = offersViewController
-
-            // Init
-//            let tabbar = TabBarController()
-//            let viewModel = TabBarViewModel()
-//            let coordinator = TabBarCoordinator()
-//
-//            // Reference
-//            tabbar.viewModel = viewModel
-//            coordinator.viewController = tabbar
-//            viewModel.coordinator = coordinator
-//            window?.rootViewController = tabbar
-//
-//            // Config
-//            coordinator.setupTabbar()
         case .offerDetail:
             break
         }

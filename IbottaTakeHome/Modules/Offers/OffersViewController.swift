@@ -7,7 +7,7 @@
 
 import UIKit
 
-class OffersViewController: UIViewController, View {
+final class OffersViewController: UIViewController, View {
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
          let collection = UICollectionView(frame: CGRect(x: 0, y: 0, width: 0, height: 0), collectionViewLayout: layout)
@@ -25,6 +25,13 @@ class OffersViewController: UIViewController, View {
         super.viewDidLoad()
         title = "Offers"
         view.backgroundColor = .white
+        setUpCollectionView()
+    }
+    
+    // MARK: - UI
+    
+    private func setUpCollectionView() {
+        
     }
 }
 
