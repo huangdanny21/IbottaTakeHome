@@ -10,7 +10,7 @@ import UIKit
 final class OfferCollectionViewCell: UICollectionViewCell {
     static let reuseIdentifier = "OfferCollectionViewCell"
     
-    private var grayContainerView: UIView = {
+    private lazy var grayContainerView: UIView = {
        let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .lightGray.withAlphaComponent(0.5)
@@ -18,7 +18,7 @@ final class OfferCollectionViewCell: UICollectionViewCell {
         return view
     }()
     
-    private var offerImageView: UIImageView = {
+    private lazy var offerImageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.backgroundColor = .clear
@@ -26,7 +26,7 @@ final class OfferCollectionViewCell: UICollectionViewCell {
         return imageView
     }()
     
-    private var amountLabel: UILabel = {
+    private lazy var amountLabel: UILabel = {
         let label = UILabel()
         label.font = App.Font(type: .demiBold(12.0)).instance
         label.textColor = UIColor.general
@@ -35,7 +35,7 @@ final class OfferCollectionViewCell: UICollectionViewCell {
         return label
     }()
     
-    private var nameLabel: UILabel = {
+    private lazy var nameLabel: UILabel = {
         let label = UILabel()
         label.font = App.Font(type: .regular(11.0)).instance
         label.textColor = UIColor.general
@@ -44,7 +44,7 @@ final class OfferCollectionViewCell: UICollectionViewCell {
         return label
     }()
     
-    private var favoritedButton: UIButton = {
+    private lazy var favoritedButton: UIButton = {
         let button = UIButton()
         button.isHidden = true
         button.translatesAutoresizingMaskIntoConstraints = false
