@@ -8,7 +8,7 @@
 import UIKit
 
 final class OffersCoordinator: Coordinate {
-    var viewController: OffersViewController?
+    weak var viewController: OffersViewController?
     
     private func offerDetailViewController(withOffer offer: OfferElement) -> UIViewController {
         let coordinator = OfferDetailCoordinator()

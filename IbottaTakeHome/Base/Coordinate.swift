@@ -11,7 +11,7 @@ protocol Coordinate {
     associatedtype Screen
     associatedtype View: UIViewController
 
-    var viewController: View? { get set }
+    var viewController: View? { get set } // TRY TO SUBCLASS THIS WITH WEAK, SO you don't run into retain cycle
 
     func showScreen(_ screen: Screen)
     func showError(_ error: Error)

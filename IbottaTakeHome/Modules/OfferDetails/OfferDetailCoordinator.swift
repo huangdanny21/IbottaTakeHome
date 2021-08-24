@@ -8,7 +8,7 @@
 import Foundation
 
 final class OfferDetailCoordinator: Coordinate {
-    var viewController: OfferDetailViewController?
+    weak var viewController: OfferDetailViewController?
     
     func showScreen(_ screen: RootCoordinator.Screen) {
         switch screen {
