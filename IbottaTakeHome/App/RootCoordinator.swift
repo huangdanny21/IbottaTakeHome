@@ -20,6 +20,7 @@ final class RootCoordinator: Coordinate {
     }()
     
     weak var viewController: UIViewController?
+    
     weak var window: UIWindow? {
         didSet {
             viewController = window?.rootViewController
